@@ -17,7 +17,7 @@ router.post("/posts" , async(req,res)=>{
     try{
         const user = await User.findById(req.user)
          const {title, description ,author} = req.body
-         const file = req.files.files.tempFilePath
+         const file = req.files.file.tempFilePath
 
          const image = await cloudinary.uploader.upload(file,{
             folder: "posts"

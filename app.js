@@ -15,7 +15,7 @@ app.use(cors())
 app.use(express.json());
 app.use(bodyparser.json());
 app.use(fileupload({
-    useTempfiles :true
+    useTempFiles :true
 }))
 
 app.use("/posts" , (req , res , next)=>{
