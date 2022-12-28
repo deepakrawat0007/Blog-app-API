@@ -43,4 +43,10 @@ router.post("/posts" , async(req,res)=>{
     }
 })
 
+router.get("/" ,(req,res)=>{
+    res.json({
+        "Message":"404 not found"
+    })
+})
+
 module.exports = router
